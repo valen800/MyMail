@@ -12,7 +12,7 @@ class MailContentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mail_content)
 
-        //Localizamos los controles
+        //Localizamos los controlesee
         //Localizamos los controles
         val toolMensaje: TextView = findViewById(R.id.textBodyMailContent) as TextView
 
