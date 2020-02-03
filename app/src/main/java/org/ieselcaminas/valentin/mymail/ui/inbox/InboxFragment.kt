@@ -31,9 +31,9 @@ class InboxFragment : Fragment() {
 
         val items = ArrayList<Mail>()
 
-        items.add(Mail(R.drawable.ic_mail, R.string.valentin))
-        items.add(Mail(R.drawable.ic_mail, R.string.alberto))
-        items.add(Mail(R.drawable.ic_mail, R.string.juan))
+        items.add(Mail(R.drawable.ic_mail, "Valentin Ruiz Lopez"))
+        items.add(Mail(R.drawable.ic_mail, "Alberto Gonzalez Abril"))
+        items.add(Mail(R.drawable.ic_mail, "Juan Melero Collado"))
 
         val recyclerMails = root.findViewById(R.id.recyclerMails) as RecyclerView
 
@@ -51,7 +51,7 @@ class InboxFragment : Fragment() {
                 ActivityOptionsCompat.makeSceneTransitionAnimation(activity!!).toBundle()
 
             val item: Mail = items.get(recyclerMails.getChildAdapterPosition(it))
-            options!!.putInt("NOM", item.text)
+            options!!.putString("NOM", item.text.toString())
 
             //Añadimos la información al Intent
             //Añadimos la información al Intent

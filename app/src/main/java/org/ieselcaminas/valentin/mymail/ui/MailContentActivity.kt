@@ -14,7 +14,7 @@ class MailContentActivity : AppCompatActivity() {
 
         //Localizamos los controlesee
         //Localizamos los controlesdd
-        val toolMensaje: TextView = findViewById(R.id.textBodyMailContent) as TextView
+        val toolMensaje: TextView = findViewById(R.id.textBodyMail) as TextView
 
 //Accedemos al Intent que ha originado la primera actividad y recuperamos la información asociada
         //Accedemos al Intent que ha originado la primera actividad y recuperamos la información asociada
